@@ -17,42 +17,11 @@ login <myusername>
 password <mypassword>
 ```
 
-Next, navigate to your project root using the command line. Execute this command to get access to CUE Frameworks:
+Next, navigate to your project root using the command line. Execute this command to get access to CUE Frameworks and install the pod:
 
 `pod repo-art add cocoapods-local "https://cueaudio.jfrog.io/cueaudio/api/pods/cocoapods-local"`
 
-Then execute command:
-
 `pod install`
-
-### Check your **Podfile**
-1. **Target** section in your Podfile should looking like this:
-
-```
-  pod "CUELive-framework", '~> 3.6.1'
-  pod "CUELive-bundle-Default", '~> 3.0'
-```
-
-2. At the top of your Podfile should be instruction:
-
-```
-plugin 'cocoapods-art', :sources => [
-  'cocoapods-local'
-]
-```
-
-3. Finally, check the follwing at the bottom of your Podfile (after the final `end`):
-
-```
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = '11.0'
-      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
-    end
-  end
-end
-```
 
 ### How to update pod versions later
 In the future, to update pod versions, execute the following:
@@ -73,12 +42,14 @@ Please check your target’s **Build Settings**, item **Other Linker Flags**, it
 ### Possible signing issue
 When demo project is built first time the signing issue may be occured: *"Signing for "CUELive-bundle-Default-CUELive" requires a development team. Select a development team in the Signing & Capabilities editor."*
 
-In this case please:
+In this case:
 1. Select "Pods" item in Project Navigator.
 2. Select for target "CUELive-bundle-Default-CUELive" tab "Signing and Capabilities".
 3. Choose correct "Team" value for code signing.
 
 ![Linker Flags](https://s3.amazonaws.com/cue-sdk-integration/code-signing.png)
+
+***Now the demo project is ready to be used!***
 
 ## Integration
 
