@@ -23,7 +23,7 @@ Next, navigate to your project root using the command line. Execute this command
 
 Then execute command:
 
-`pod install'
+`pod install`
 
 ### Check your **Podfile**
 1. **Target** section in your Podfile should looking like this:
