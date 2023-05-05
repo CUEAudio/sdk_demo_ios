@@ -21,6 +21,10 @@ Next, navigate to your project root using the command line. Execute this command
 
 `pod repo-art add cocoapods-local "https://cueaudio.jfrog.io/cueaudio/api/pods/cocoapods-local"`
 
+Then execute command:
+
+`pod install'
+
 ### Check your **Podfile**
 1. **Target** section in your Podfile should looking like this:
 
