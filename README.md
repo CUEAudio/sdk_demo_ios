@@ -76,9 +76,7 @@ In this case please:
 
 ![Linker Flags](https://s3.amazonaws.com/cue-sdk-integration/code-signing.png)
 
-##Integration
-
-#### ***Swift***
+## Integration
 
 Simply execute the following code:
 
@@ -92,7 +90,7 @@ Simply execute the following code:
     }
 ```
 
-Make sure that the CUE ViewController is full screen. If it is not completely full screen, this can lead to crashes related to the CUE camera button and delegates.
+Make sure that the CUE ViewController is **full screen**. If it is not completely full screen, this can lead to crashes related to the CUE camera button and delegates.
 
 ## Configuration
 
