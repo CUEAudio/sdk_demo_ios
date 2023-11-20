@@ -3,11 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4188C0C6971EADA9CF4F72AE /* Pods_CUELiveDemo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1446EE4EE91967C505943DB3 /* Pods_CUELiveDemo_Swift.framework */; };
+		546648214A9D9933F7A6EC20 /* Pods_CUELiveDemo_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0438E87C471E8DA9053EA11D /* Pods_CUELiveDemo_Swift.framework */; };
 		F41F787B216FD22D0041A3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F787A216FD22D0041A3DA /* AppDelegate.swift */; };
 		F41F787D216FD22D0041A3DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41F787C216FD22D0041A3DA /* ViewController.swift */; };
 		F41F7880216FD22D0041A3DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F41F787E216FD22D0041A3DA /* Main.storyboard */; };
@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FA68316B262225AA0929C73 /* Pods-CUELiveDemo-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUELiveDemo-Swift.debug.xcconfig"; path = "Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift.debug.xcconfig"; sourceTree = "<group>"; };
-		1446EE4EE91967C505943DB3 /* Pods_CUELiveDemo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CUELiveDemo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4DE7C7B293746119BF9290E5 /* Pods-CUELiveDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUELiveDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		0438E87C471E8DA9053EA11D /* Pods_CUELiveDemo_Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CUELiveDemo_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BE027DF232A805979E2514B /* Pods-CUELiveDemo-Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUELiveDemo-Swift.release.xcconfig"; path = "Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift.release.xcconfig"; sourceTree = "<group>"; };
+		A1D6CC598DFC03E39241AFD9 /* Pods-CUELiveDemo-Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CUELiveDemo-Swift.debug.xcconfig"; path = "Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift.debug.xcconfig"; sourceTree = "<group>"; };
 		F41F7877216FD22D0041A3DA /* CUELiveDemo-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CUELiveDemo-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41F787A216FD22D0041A3DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F41F787C216FD22D0041A3DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,28 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4188C0C6971EADA9CF4F72AE /* Pods_CUELiveDemo_Swift.framework in Frameworks */,
+				546648214A9D9933F7A6EC20 /* Pods_CUELiveDemo_Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51599D8AF755C43C974A8474 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				1446EE4EE91967C505943DB3 /* Pods_CUELiveDemo_Swift.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		61016E34B32C4EB96EE047D9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0FA68316B262225AA0929C73 /* Pods-CUELiveDemo-Swift.debug.xcconfig */,
-				4DE7C7B293746119BF9290E5 /* Pods-CUELiveDemo-Swift.release.xcconfig */,
+				A1D6CC598DFC03E39241AFD9 /* Pods-CUELiveDemo-Swift.debug.xcconfig */,
+				1BE027DF232A805979E2514B /* Pods-CUELiveDemo-Swift.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EACF4BF1009E5ACB5EA06E4B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0438E87C471E8DA9053EA11D /* Pods_CUELiveDemo_Swift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		F41F786E216FD22D0041A3DA = {
@@ -65,7 +65,7 @@
 				F41F7879216FD22D0041A3DA /* CUELiveDemo-Swift */,
 				F41F7878216FD22D0041A3DA /* Products */,
 				61016E34B32C4EB96EE047D9 /* Pods */,
-				51599D8AF755C43C974A8474 /* Frameworks */,
+				EACF4BF1009E5ACB5EA06E4B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,12 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F41F7889216FD22E0041A3DA /* Build configuration list for PBXNativeTarget "CUELiveDemo-Swift" */;
 			buildPhases = (
-				4E09C0D1B89D4A80AA8E1354 /* [CP] Check Pods Manifest.lock */,
+				B548F02587C996A28A541A7B /* [CP] Check Pods Manifest.lock */,
 				F41F7873216FD22D0041A3DA /* Sources */,
 				F41F7874216FD22D0041A3DA /* Frameworks */,
 				F41F7875216FD22D0041A3DA /* Resources */,
-				387763A5FF057E405F889CA6 /* [CP] Embed Pods Frameworks */,
-				8704626E5B027B0602D84470 /* [CP] Copy Pods Resources */,
+				CE9B72E04F5974016D3EDFC3 /* [CP] Embed Pods Frameworks */,
+				ACDADDC2EE738425C4EEF743 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,24 +162,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		387763A5FF057E405F889CA6 /* [CP] Embed Pods Frameworks */ = {
+		ACDADDC2EE738425C4EEF743 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4E09C0D1B89D4A80AA8E1354 /* [CP] Check Pods Manifest.lock */ = {
+		B548F02587C996A28A541A7B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -201,21 +201,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8704626E5B027B0602D84470 /* [CP] Copy Pods Resources */ = {
+		CE9B72E04F5974016D3EDFC3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CUELiveDemo-Swift/Pods-CUELiveDemo-Swift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -370,11 +370,11 @@
 		};
 		F41F788A216FD22E0041A3DA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0FA68316B262225AA0929C73 /* Pods-CUELiveDemo-Swift.debug.xcconfig */;
+			baseConfigurationReference = A1D6CC598DFC03E39241AFD9 /* Pods-CUELiveDemo-Swift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EL8TZV5FP2;
+				DEVELOPMENT_TEAM = 9226H4XQQH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "CUELiveDemo-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -386,21 +386,21 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cueaudio.CUELiveDemo-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cueaudio.CUELiveDemo-Swift1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F41F788B216FD22E0041A3DA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DE7C7B293746119BF9290E5 /* Pods-CUELiveDemo-Swift.release.xcconfig */;
+			baseConfigurationReference = 1BE027DF232A805979E2514B /* Pods-CUELiveDemo-Swift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EL8TZV5FP2;
+				DEVELOPMENT_TEAM = 9226H4XQQH;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "CUELiveDemo-Swift/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -412,10 +412,10 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cueaudio.CUELiveDemo-Swift";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cueaudio.CUELiveDemo-Swift1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
