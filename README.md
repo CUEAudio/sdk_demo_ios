@@ -68,6 +68,19 @@ Simply execute the following code:
 
 Make sure that the CUE ViewController is **full screen**. If it is not completely full screen, this can lead to crashes related to the CUE camera button and delegates.
 
+## Using PRIVACY flag
+
+You can pass optional PRIVACY flag to prevent collecting and sending to the server any user information. SDK initialization in this case looks like that:
+
+```
+    @IBAction func launchLightShowGUI(_ sender: Any) {
+        let params: NSDictionary = ["PRIVACY":true]
+        let initialController = NavigationManager.initialController(extraData: params)
+        initialController.modalPresentationStyle = .fullScreen
+        present(initialController, animated: true)
+    }
+```
+
 ## Configuration
 
 The file `CUEConfig.plist` contains parameters that can be customized for your application. You can overwrite these parameters by including `CUEConfig.plist` in your project and including the keys and values you would like to overwrite. 
