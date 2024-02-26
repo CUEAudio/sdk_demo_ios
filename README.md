@@ -56,7 +56,7 @@ In this case:
 
 Simply execute the following code:
 
-```
+```swift
 // MARK: CUE Audio
     
     @IBAction func launchLightShowGUI(_ sender: Any) {
@@ -72,7 +72,7 @@ Make sure that the CUE ViewController is **full screen**. If it is not completel
 
 You can pass optional PRIVACY flag to prevent collecting and sending to the server any user information. SDK initialization in this case looks like that:
 
-```
+```swift
     @IBAction func launchLightShowGUI(_ sender: Any) {
         let params: NSDictionary = ["PRIVACY":true]
         let initialController = NavigationManager.initialController(extraData: params)
