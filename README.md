@@ -68,6 +68,12 @@ Simply execute the following code:
 
 Make sure that the CUE ViewController is **full screen**. If it is not completely full screen, this can lead to crashes related to the CUE camera button and delegates.
 
+## Associated Domains
+
+In your project settings, you should add two Associated Domains as shown here:
+
+<img width="771" height="150" alt="Screenshot 2025-10-06 at 12 07 52 PM" src="https://github.com/user-attachments/assets/3019cf60-e89a-4aac-9cb4-d30a8ce33b4b" />
+
 ## Using PRIVACY flag
 
 You can pass optional PRIVACY flag to prevent collecting and sending to the server any user information. SDK initialization in this case looks like that:
