@@ -70,9 +70,55 @@ Make sure that the CUE ViewController is **full screen**. If it is not completel
 
 ## Associated Domains
 
-In your project settings, you should add two Associated Domains as shown here:
+In order to maximize participation, CUE supports deep links directly to the SDK. To enable this, in your project settings, you should add two Associated Domains as shown here:
 
 <img width="771" height="150" alt="Screenshot 2025-10-06 at 12 07 52 PM" src="https://github.com/user-attachments/assets/3019cf60-e89a-4aac-9cb4-d30a8ce33b4b" />
+
+Additionally, to handle the link properly, add the following code to your SceneDelegate:
+
+```
+  func routeDeepLink(_ url: URL) {
+        guard let rootVC = window?.rootViewController as? ViewController else {
+            print("Unable to find root ViewController")
+            return
+        }
+        rootVC.handleDeepLink(url)
+    }
+
+    // Called when the app is already running in the foreground/background
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+              let url = userActivity.webpageURL else { return }
+        routeDeepLink(url)
+    }
+
+    // Called on cold start when launching from a universal link
+    func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Handle deep link if present
+        if let userActivity = connectionOptions.userActivities.first,
+           userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+           let url = userActivity.webpageURL {
+            // Make 1 sec delay to give time to init the window properly
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.routeDeepLink(url)
+            }
+        }
+    }
+```
+
+Finally, update your Root View Controller with the following code:
+
+```
+func handleDeepLink(_ url: URL) {
+        let link = url.absoluteString
+        print("Handling deep link: \(link)")
+
+        self.urlTextField.text = link
+        if link.contains("cue.co") || link.contains("portal.cueaudio") {
+            <launch cue sdk> 
+        }
+    }
+```
 
 ## Using PRIVACY flag
 
