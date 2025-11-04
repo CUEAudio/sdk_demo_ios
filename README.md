@@ -113,7 +113,6 @@ func handleDeepLink(_ url: URL) {
         let link = url.absoluteString
         print("Handling deep link: \(link)")
 
-        self.urlTextField.text = link
         if link.contains("cue.co") || link.contains("portal.cueaudio") {
             <launch cue sdk> 
         }
